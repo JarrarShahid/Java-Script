@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM INTERFACE</title>
+</head>
+<body>
+    <div id="pinEntry">
+        Enter Your PIN Code: <input type="password" id="pinInput">
+        <button onclick="checkPin()">Submit</button>
+      </div>
+    
+      <div id="accountType" style="display: none;">
+        Select Account Type:
+        <select id="accountSelect">
+          <option value="current">Current</option>
+          <option value="savings">Savings</option>
+        </select>
+        <button onclick="selectTransaction()">Submit</button>
+      </div>
+    
+      <div id="transactionType" style="display: none;">
+        Select Transaction Type:
+        <select id="transactionSelect">
+          <option value="balance">Balance Inquiry</option>
+          <option value="withdraw">Cash Withdrawal</option>
+          <option value="online">Online Banking</option>
+        </select>
+        <button onclick="executeTransaction()">Submit</button>
+      </div>
+    
+      <div id="amountInput" style="display: none;">
+        Enter Amount: <input type="number" id="amount">
+        <button onclick="withdrawAmount()">Withdraw</button>
+      </div>
+<script>
+    let pin, accountType, transactionType;
+
+function checkPin() {
+  pin = document.getElementById("pinInput").value;
+  //  pin validation logic here
+  document.getElementById("pinEntry").style.display = "none";
+  document.getElementById("accountType").style.display = "block";
+}
+
+function selectTransaction() {
+  accountType = document.getElementById("accountSelect").value;
+  document.getElementById("accountType").style.display = "none";
+  document.getElementById("transactionType").style.display = "block";
+}
+
+function executeTransaction() {
+  transactionType = document.getElementById("transactionSelect").value;
+  if (transactionType === "online") {
+    let choice = confirm("UPgrade to premium to access this feature.");
+    if (choice) {
+      document.getElementById("transactionType").style.display = "none";
+      document.getElementById("accountType").style.display = "block";
+    }
+  } else if (transactionType === "balance") {
+    alert("You have PKR 100,000 in your account.");
+  } else if (transactionType === "withdraw") {
+    document.getElementById("transactionType").style.display = "none";
+    document.getElementById("amountInput").style.display = "block";
+  }
+}
+
+function withdrawAmount() {
+  let amount = parseInt(document.getElementById("amount").value);
+  if (amount > 100000) {
+    alert("Insufficient balance.");
+    return;
+  } else if (amount > 25000) {
+    alert("You can withdraw up to PKR 25,000 Rupees per transaction.");
+    return;
+  }
+  alert("Thank you for using XYZ ATM. Please come again.");
+  // Reset the interface to the initial state
+  resetInterface();
+}
+
+function resetInterface() {
+  pin = null;
+  accountType = null;
+  transactionType = null;
+  document.getElementById("pinInput").value = "";
+  document.getElementById("amount").value = "";
+  document.getElementById("amountInput").style.display = "none";
+  document.getElementById("transactionType").style.display = "none";
+  document.getElementById("accountType").style.display = "none";
+  document.getElementById("pinEntry").style.display = "block";
+}
+
+</script>    
+</body>
+</html>
