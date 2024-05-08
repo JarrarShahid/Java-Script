@@ -1,0 +1,80 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.main2 {
+    width: 1920px;
+    height: 3800px; /* Set the minimum height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.main2 {
+    flex: 1; /* This will make the .main2 flex container take up remaining space */
+}
+
+.cb {
+    background-image: url('Images/contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh; /* Set the height to 100% of the viewport height */
+    width: 100%;
+    margin-top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+}
+
+.cb:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6); /* Adjust the values for the hover effect */
+}
+
+.fm{
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    height: 50vh;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+}
+
+.fm:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6); 
+}
+
+.reg {
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    height: 50vh;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+}
+
+.reg:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6); 
+}
+
+.rate {
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    height: 50vh;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+}
+
+.rate:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6); 
+}

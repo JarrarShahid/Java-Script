@@ -1,0 +1,74 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.he3{
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.banb{
+
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60%;
+    height: 1000px;
+    margin-left: 20%;
+    margin-top: 25px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+}
+
+.banb:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6); /* Adjust the values for the hover effect */
+}
+
+.ue3{
+    margin-top: 25px;
+    margin-left: 20%;
+    width: 60%;
+    height: 50px;
+    border: 2px solid gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+
+}
+
+.ue3:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 2); 
+}
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  }
+.ue3 a {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    animation: blink 1s infinite; /* Adjust the duration as needed */
+}
+
+.bd3{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 25px;
+}
+
+.bd3 p {
+    text-align: justify;
+    font-size: 18px;
+}

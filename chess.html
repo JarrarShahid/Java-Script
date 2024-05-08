@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportsinfo</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="chess.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="nav">
+      <ul>
+        <li><a href="index.html"><img src="Images/x2.jpg" width="250px"></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+      <div class="dropdown">
+        <div class="dropdown-container">
+          <select id="sportsDropdown" onclick="toggleDropdown()" onchange="performSearch()">
+            <option value="" selected disabled>SPORTS</option>
+            <option value="athletics.html">Athletics</option>
+            <option value="badminton.html">Badminton</option>
+            <option value="billiards.html">Billiards</option>
+            <option value="chess.html">Chess</option>
+            <option value="cricket.html">Cricket</option>
+            <option value="football.html">Football</option>
+            <option value="golf.html">Golf</option>
+            <option value="judo.html">Judo</option>
+            <option value="mr.html">Motorcycle Racing</option>
+            <option value="swim.html">Swimming</option>
+            <option value="tennis.html">Tennis</option>
+            <option value="volleyball.html">Volleyball</option>
+          </select>
+          <div class="dropdown-content">
+            <!-- Add links for each sport -->
+            <a href="athletics.html">Athletics</a>
+            <a href="badminton.html">Badminton</a>
+            <a href="billiards.html">Billiards</a>
+            <a href="chess.html">Chess</a>
+            <a href="cricket.html">Cricket</a>
+            <a href="football.html">Football</a>
+            <a href="golf.html">Golf</a>
+            <a href="judo.html">Judo</a>
+            <a href="mr.html">Motorcycle Racing</a>
+            <a href="swim.html">Swimming</a>
+            <a href="tennis.html">Tennis</a>
+            <a href="volleyball.html">Volleyball</a>
+            <!-- Add other sport links -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sea">
+        <div class="container-fluid">
+          <form onsubmit="performSearch(); return false;" class="d-flex" role="search">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"
+                style="color: #ffffff;"></i></button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="he4">
+      <h1><u>CHESS</u></h1>
+    </div>
+
+    <a href="#">
+      <div class="banc">
+        <img src="ni/nc.jpg" height="1000px" width="100%">
+      </div>
+    </a>
+
+    <div class="ue4">
+      <p><a href="#"><i>No Upcoming Events!</i></a></p>
+    </div>
+
+    <div class="bd4">
+      <h1>Number of players</h1>
+      <p>
+        <li> 2 players : (one player controls the white pieces, the other controls the black pieces).</li>
+      </p>
+
+      <h1>Strategy of game</h1>
+      <p>
+
+        <li>Chess is a game of skill, strategy, and tactics played on an 8x8 grid.</li>
+        <li>Players control 16 pieces, each with specific movement rules.</li>
+        <li>Strategic elements include controlling the center, piece development, king safety, and pawn structure.</li>
+        <li>The overall goal is to checkmate your opponent's king. This means putting the king in a position where it is
+          under direct attack (check) and has no legal way to escape. The game involves strategic piece movement,
+          planning ahead, and anticipating your opponent's moves.</li>
+
+      </p>
+
+      <h1>Is it a team game?</h1>
+      <p>
+        Chess is primarily an individual game, but team competitions exist with multiple players forming a team and
+        competing against another team. Each player faces an opponent on a different board, and the team's score is
+        determined by individual performances.
+      </p>
+      <h1>Rules of the game</h1>
+      <p>
+        <li>Each player starts with 16 pieces: 8 pawns, 2 rooks, 2 knights, 2 bishops, a queen, and a king.</li>
+        <li>Pieces move in specific ways (pawns move forward, rooks and queen move vertically or horizontally, knights
+          move in L-shapes, bishops move diagonally).</li>
+        <li>Players take turns moving one piece per turn, with the goal of checkmating the opponent's king.</li>
+        <li>Pawns can be promoted to another piece (except the king) upon reaching the other side of the board.</li>
+        <li>A king cannot be put in direct attack without a legal escape, this is called "check".</li>
+        <li>When a king is in check and has no legal escape, it is "checkmate" and the game is over.</li>
+        <li>There are also other ways to end the game, such as stalemate (king is not in check but has no legal moves)
+          or resignation (a player concedes defeat).</li>
+        <li>Special moves include castling, en passant, and pawn promotion.</li>
+        <li>Chess also has specific rules regarding stalemate and draw.</li>
+      </p>
+
+      <h1>Some important facts about the game</h1>
+      <p>
+        <li>Chess originated in India around the 6th century AD.</li>
+        <li>Chess has a rich history and cultural significance, played globally at amateur and professional levels.</li>
+        <li>It is considered one of the most intellectually stimulating games in the world.</li>
+        <li>Chess has been shown to have various benefits, including improving memory, concentration, and critical
+          thinking skills.</li>
+        <li>It is a popular competitive sport with professional players and international tournaments.</li>
+
+
+      </p>
+
+      <h1>Statistics/ Records</h1>
+      <p>
+        <li>The chess world has various titles, such as Grandmaster (GM) and International Master (IM), bestowed by FIDE
+          (Fédération Internationale des Échecs or International Chess Federation).</li>
+        <li>World Chess Champions, such as Garry Kasparov, Anatoly Karpov, and Magnus Carlsen, are notable figures in
+          chess history.</li>
+        <li>Various databases track players' Elo ratings, reflecting their skill levels.</li>
+        <li>The longest professional chess game lasted 193 moves and spanned 7 hours and 4 minutes.</li>
+        <li>The highest Elo rating (a measure of chess skill) ever achieved is 2882 by Magnus Carlsen (Norway).</li>
+        <li>Judit Polgár (Hungary) is considered the strongest female chess player of all time and achieved a peak Elo
+          rating of 2735.</li>
+      </p>
+
+
+
+
+    </div>
+
+    <div class="footer">
+      <div class="f1">
+        <ul style="width: 25%;">
+          <li style="text-align: center;">
+            <h1> ABOUT US</h1>
+          </li>
+          <li style="text-align: justify;">Welcome to SportsInfo, your ultimate destination for all things sports!
+            At SportsInfo, we are passionate
+            about connecting sports enthusiasts with the thrilling world of global sports events. Our mission is
+            to provide a comprehensive platform where individuals can stay informed about upcoming sports events,
+            register for participation in global sports competitions, and access legitimate and up-to-date
+            information on a wide range of sports. Whether you're an athlete gearing up for a competition or a
+            dedicated fan seeking the latest updates, SportsInfo is here to be your go-to source for everything
+            sports-related. Join us in celebrating the spirit of sportsmanship, athleticism, and the excitement
+            that
+            the world of sports brings!</li>
+        </ul>
+
+
+
+        <ul style="width: 25%;">
+          <li style="text-align: center;">
+            <h1>CONTACT US</h1>
+          </li>
+          <li>
+            <a style="display: flex;
+                          justify-content: center;
+                          text-decoration: none;
+                          color: white;
+                          font-size: large;" href="mailto:sportsinfo@gmail.com">Email: sportsinfo@gmail.com</a>
+          </li><br>
+          <li style="display: flex; justify-content: center;"><a style="text-decoration: none; color: white;"
+              href="tel:+923182661291">Mobile: +92 318-2661291</a></li><br>
+          <li style="display: flex; justify-content: center;">
+            <h4><a style="text-decoration: none; color: white;" href="https://www.facebook.com/"><i
+                  class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                FACEBOOK</a></h4>
+          </li><br>
+          <li style="display: flex; justify-content: center;">
+            <h4><a style="text-decoration: none; color: white;" href="https://twitter.com/?lang=en"><i
+                  class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff;"></i> TWITTER</a></h4>
+          </li>
+          <br>
+          <li style="text-align: center;"><a style=" color: white; text-decoration: none; font-size: 22px;"
+              href="contact.html">Register Now</a></li><br>
+          <li style="text-align: center;"><a style=" color: white; text-decoration: none; font-size: 22px;"
+              href="contact.html">Feedback</a></li>
+        </ul>
+
+
+
+
+        <ul style="width: 25%;">
+          <li style="text-align: center;">
+            <h1>SPORTS</h1>
+          </li>
+          <div class="lines">
+            <ul>
+              <li><a href="athletics.html">Athletics</a></li><br>
+              <li><a href="chess.html">Chess</a></li><br>
+              <li><a href="golf.html">Golf</a></li><br>
+              <li><a href="swim.html">Swimming</a></li><br>
+            </ul>
+
+            <ul>
+              <li><a href="badminton.html">Badminton</a></li><br>
+              <li><a href="cricket.html">Cricket</a></li><br>
+              <li><a href="judo.html">Judo</a></li><br>
+              <li><a href="tennis.html">Tennis</a></li><br>
+            </ul>
+
+            <ul>
+              <li><a href="billiards.html">Billiards</a></li><br>
+              <li><a href="football.html">Football</a></li><br>
+              <li><a href="mr.html">Motorcycle Racing</a></li><br>
+              <li><a href="volleyball.html">Volleyball</a></li><br>
+            </ul>
+
+          </div>
+
+        </ul>
+      </div>
+      <div class="f2">
+
+        <h2>
+          <p>&copy; 2024 All rights reserved by <a href="index.html">sportsinfo.com</a></p>
+        </h2>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="scrollToTopBtn" class="scroll-to-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+
+    function toggleDropdown() {
+      var dropdown = document.getElementById("sportsDropdown");
+      dropdown.disabled = !dropdown.disabled;
+    }
+
+    var sportsData = [
+      { name: "Athletics", url: "athletics.html" },
+      { name: "Badminton", url: "badminton.html" },
+      { name: "Billiards", url: "billiards.html" },
+      { name: "Chess", url: "chess.html" },
+      { name: "Cricket", url: "cricket.html" },
+      { name: "FOOT BALL", url: "football.html" },
+      { name: "Golf", url: "golf.html" },
+      { name: "Judo", url: "judo.html" },
+      { name: "Motorcycle Racing", url: "mr.html" },
+      { name: "Swimming", url: "swim.html" },
+      { name: "Tennis", url: "tennis.html" },
+      { name: "Volleyball", url: "volleyball.html" },
+      // Add more sports as needed
+    ];
+
+    function performSearch() {
+      // Get the value from the search input
+      var searchQuery = document.getElementById("searchInput").value.toLowerCase();
+
+      // Filter sports based on the search query
+      var filteredSports = sportsData.filter(function (sport) {
+        return sport.name.toLowerCase().includes(searchQuery);
+      });
+
+      // Redirect to the first matching sport's URL
+      if (filteredSports.length > 0) {
+        window.location.href = filteredSports[0].url;
+      } else {
+        // Handle no matching results
+        alert("No matching results found.");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      window.addEventListener("scroll", function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      });
+
+      scrollToTopBtn.addEventListener("click", function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      });
+    });
+
+
+
+
+  </script>
+</body>
+
+</html>

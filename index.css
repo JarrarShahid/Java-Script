@@ -1,0 +1,300 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+}
+
+.nav {
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border: 5px solid #97db83;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .dropdown {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  .sea {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+.nav:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6); /* Adjust the values for the hover effect */
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav ul li {
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav ul li a:hover {
+color: #97db83;
+}
+
+.dropdown {
+    margin-left:15px; /* Push the dropdown to the right */
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Adjust the distance from the top */
+    background-color: #97db83;
+    min-width: 162px;
+    z-index: 1;
+    margin-left: -5px; /* Align the dropdown with other items */
+}
+
+.dropdown-container select {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    border: 4px solid black;
+}
+
+.dropdown-container:hover .dropdown-content {
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.sea{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.container-fluid input {
+    height: 25px;
+}
+.container-fluid form {
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid button {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.banner{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+}
+
+.banner:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6); /* Adjust the values for the hover effect */
+}
+
+.info{
+    width: 60%;
+    margin-left: 25%;
+    margin-right: auto;
+  }
+  .c1 {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .c2 {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .c3 {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .card {
+    margin-left: 25px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+    transition: box-shadow 0.3s ease;
+    width: 18rem; /* Set the desired width */
+    height: 100%; /* Set the height to occupy full available height */
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6);
+}
+  .card-body {
+    background-color: white;
+    align-items: center;
+    flex: 1;
+    /* Take remaining vertical space within the card */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .card-text {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .btn {
+    align-self: center;
+    /* Align the button in the center horizontally */
+    margin-bottom: 10px;
+    /* Optional: Add some space between text and button */
+  }
+
+  p {
+    text-align: center;
+  }
+  .btn.btn-dark:hover {
+  color: white; /* Set the desired text color on hover */
+  background-color: black; /* Set the desired background color on hover */
+  border-color: black; /* Set the desired border color on hover */
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    margin-top: 100px;
+    border-top-right-radius:6px;
+    border-top-left-radius:6px;
+  }
+  .f1 {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .f1 ul li {
+    list-style-type: none;
+  
+  }
+  
+  
+  .f2 {
+    width: 100%;
+    background-color: #97db83;
+    height: 60px;
+  
+  }
+  
+  .lines {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .lines a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  }
+  
+  .f2 {
+    text-align: center;
+    color: white;
+  
+  }
+  
+  .f2 a {
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  .f2 p {
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #97db83;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top-btn i {
+    margin-top: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+}

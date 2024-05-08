@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportsinfo</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"><img src="Images/x2.jpg" width="250px"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+            <div class="dropdown">
+                <div class="dropdown-container">
+                    <select id="sportsDropdown" onclick="toggleDropdown()" onchange="performSearch()">
+                        <option value="" selected disabled>SPORTS</option>
+                        <option value="athletics.html">Athletics</option>
+                        <option value="badminton.html">Badminton</option>
+                        <option value="billiards.html">Billiards</option>
+                        <option value="chess.html">Chess</option>
+                        <option value="cricket.html">Cricket</option>
+                        <option value="football.html">Football</option>
+                        <option value="golf.html">Golf</option>
+                        <option value="judo.html">Judo</option>
+                        <option value="mr.html">Motorcycle Racing</option>
+                        <option value="swim.html">Swimming</option>
+                        <option value="tennis.html">Tennis</option>
+                        <option value="volleyball.html">Volleyball</option>
+                    </select>
+                    <div class="dropdown-content">
+                        <!-- Add links for each sport -->
+                        <a href="athletics.html">Athletics</a>
+                        <a href="badminton.html">Badminton</a>
+                        <a href="billiards.html">Billiards</a>
+                        <a href="chess.html">Chess</a>
+                        <a href="cricket.html">Cricket</a>
+                        <a href="football.html">Football</a>
+                        <a href="golf.html">Golf</a>
+                        <a href="judo.html">Judo</a>
+                        <a href="mr.html">Motorcycle Racing</a>
+                        <a href="swim.html">Swimming</a>
+                        <a href="tennis.html">Tennis</a>
+                        <a href="volleyball.html">Volleyball</a>
+                        <!-- Add other sport links -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sea">
+              <div class="container-fluid">
+                  <form onsubmit="performSearch(); return false;" class="d-flex" role="search">
+                      <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"
+                              style="color: #ffffff;"></i></button>
+                  </form>
+              </div>
+          </div>
+
+        </div>
+
+        <div class="ab">
+
+        </div>
+
+        <div class="vis">
+            <br><br><h1 style="text-align: center;">Our Vision</h1><br><br>
+            <p style="text-align: justify;">
+
+                In the realm of Sports Info, our vision extends to the creation of a global landscape where the pulse of
+                every game resonates with sports enthusiasts. We aspire to position ourselves as the leading platform on
+                a global scale, dedicated to curating and disseminating dynamic sports information that goes beyond
+                geographical constraints. Our goal is to break down barriers, offering fans a seamless and immersive
+                experience that amplifies the universal passion for sports.
+                <br><br><br>
+                As a forward-thinking entity, we recognize the transformative power of sports in uniting people across
+                cultures and continents. Our commitment lies in providing a comprehensive and accessible hub where fans
+                can stay informed, engaged, and connected with their favorite sports and teams. By embracing innovation
+                and leveraging cutting-edge technology, we aim to redefine the sports information landscape, ensuring
+                that enthusiasts worldwide have a centralized and enriching platform that caters to their diverse
+                interests.
+                <br><br><br>
+                At Sports Info, our vision is not just about delivering data but fostering a global community bound by
+                the exhilaration and camaraderie that sports bring. We envision a world where every sports fan,
+                regardless of location, finds a home in our platform, celebrating the heartbeat of every game.
+
+            </p>
+        </div>
+
+        <div class="mis">
+            <br><br><h1 style="text-align: center;">Our Mision</h1><br><br>
+            <p style="text-align: justify;">
+
+                At Sports Info, our mission revolves around the expeditious launch and development of sportsinfo.com, a
+                cutting-edge digital hub poised to become the ultimate haven for sports aficionados worldwide. Committed
+                to delivering an unparalleled experience, our focus is on creating an immersive and comprehensive
+                platform that goes beyond conventional sports coverage.
+                <br><br><br>
+                Sportsinfo.com is envisioned as a one-stop destination where enthusiasts can delve into the intricacies
+                of their favorite sports. Our commitment to detail is reflected in the provision of in-depth insights,
+                captivating visuals, and interactive features that capture the true essence of each sporting endeavor.
+                We understand that the world of sports is dynamic, and our mission is to provide users with real-time
+                information, engaging content, and a user-friendly interface.
+                <br><br><br>
+                Through our platform, we aim to foster a sense of community among sports lovers, transcending
+                geographical boundaries. By leveraging innovative technologies and design, we seek to redefine the way
+                fans interact with and consume sports content. Ultimately, our mission is to empower individuals with a
+                digital space that not only informs but also celebrates the passion and excitement inherent in every
+                sporting event. Sports Info is dedicated to revolutionizing the sports information landscape and shaping
+                the future of sports-centric digital experiences.
+            </p>
+        </div>
+        <div class="val">
+            <br><br><h1 style="text-align: center;">Our Values</h1><br><br>
+            <p style="text-align: justify;">
+
+                At Sports Info, our core values form the bedrock of our commitment to excellence, innovation, and an
+                unwavering passion for sports. We are dedicated to upholding the highest standards of quality, ensuring
+                that every facet of our platform reflects authenticity and reliability. Rooted in a profound love for
+                sports, our values inspire us to go beyond the ordinary, continuously pushing the boundaries of
+                technology to shape a dynamic and vibrant online community.
+                <br><br><br>
+                Authenticity is paramount to our mission, and we prioritize delivering accurate and trustworthy sports
+                information. Our unwavering commitment to user satisfaction propels us to create an immersive and
+                enriching experience on sportsinfo.com. We recognize the importance of integrity in building trust with
+                our audience, and our values guide us in fostering a relationship built on transparency and
+                accountability.
+                <br><br><br>
+                Sportsinfo.com is not just a platform; it is a beacon for sports enthusiasts globally. With a
+                customer-centric approach and a focus on delighting our users, we aspire to elevate the online sports
+                experience, creating a space that resonates with the fervor and excitement that sports bring to people's
+                lives. Sports Info is more than a digital destination; it is a testament to our values and a commitment
+                to shaping the future of sports information dissemination.
+            </p>
+        </div>
+
+        <div class="footer1">
+            <br><br>
+            <div class="f1">
+                <ul style="width: 25%;">
+                    <li style="text-align: center;">
+                        <h1> ABOUT US</h1>
+                    </li>
+                    <li style="text-align: justify;">Welcome to SportsInfo, your ultimate destination for all things
+                        sports!
+                        At SportsInfo, we are passionate
+                        about connecting sports enthusiasts with the thrilling world of global sports events. Our
+                        mission is
+                        to provide a comprehensive platform where individuals can stay informed about upcoming sports
+                        events,
+                        register for participation in global sports competitions, and access legitimate and up-to-date
+                        information on a wide range of sports. Whether you're an athlete gearing up for a competition or
+                        a
+                        dedicated fan seeking the latest updates, SportsInfo is here to be your go-to source for
+                        everything
+                        sports-related. Join us in celebrating the spirit of sportsmanship, athleticism, and the
+                        excitement
+                        that
+                        the world of sports brings!</li>
+                </ul>
+
+
+
+                <ul style="width: 25%;">
+                    <li style="text-align: center;">
+                        <h1>CONTACT US</h1>
+                    </li>
+                    <li>
+                        <a style="display: flex;
+                          justify-content: center;
+                          text-decoration: none;
+                          color: white;
+                          font-size: large;" href="mailto:sportsinfo@gmail.com">Email: sportsinfo@gmail.com</a>
+                    </li><br>
+                    <li style="display: flex; justify-content: center;"><a style="text-decoration: none; color: white;"
+                            href="tel:+923182661291">Mobile: +92 318-2661291</a></li><br>
+                    <li style="display: flex; justify-content: center;">
+                        <h4><a style="text-decoration: none; color: white;" href="https://www.facebook.com/"><i
+                                    class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                                FACEBOOK</a></h4>
+                    </li><br>
+                    <li style="display: flex; justify-content: center;">
+                        <h4><a style="text-decoration: none; color: white;" href="https://twitter.com/?lang=en"><i
+                                    class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff;"></i> TWITTER</a></h4>
+                    </li>
+                    <br>
+          <li style="text-align: center;"><a style=" color: white; text-decoration: none; font-size: 22px;" href="contact.html">Register Now</a></li><br>
+          <li style="text-align: center;"><a style=" color: white; text-decoration: none; font-size: 22px;" href="contact.html">Feedback</a></li>
+                </ul>
+
+
+
+
+                <ul style="width: 25%;">
+                    <li style="text-align: center;">
+                        <h1>SPORTS</h1>
+                    </li>
+                    <div class="lines">
+                        <ul>
+                            <li><a href="athletics.html">Athletics</a></li><br>
+                            <li><a href="chess.html">Chess</a></li><br>
+                            <li><a href="golf.html">Golf</a></li><br>
+                            <li><a href="swim.html">Swimming</a></li><br>
+                        </ul>
+
+                        <ul>
+                            <li><a href="badminton.html">Badminton</a></li><br>
+                            <li><a href="cricket.html">Cricket</a></li><br>
+                            <li><a href="judo.html">Judo</a></li><br>
+                            <li><a href="tennis.html">Tennis</a></li><br>
+                        </ul>
+
+                        <ul>
+                            <li><a href="billiards.html">Billiards</a></li><br>
+                            <li><a href="football.html">Football</a></li><br>
+                            <li><a href="mr.html">Motorcycle Racing</a></li><br>
+                            <li><a href="volleyball.html">Volleyball</a></li><br>
+                        </ul>
+
+                    </div>
+
+                </ul>
+            </div>
+            <div class="f2">
+
+                <h2>
+                    <p>&copy; 2024 All rights reserved by <a href="index.html">sportsinfo.com</a></p>
+                </h2>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="scrollToTopBtn" class="scroll-to-top-btn">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script>
+
+            function toggleDropdown() {
+                    var dropdown = document.getElementById("sportsDropdown");
+                    dropdown.disabled = !dropdown.disabled;
+                }
+            
+                var sportsData = [
+                        { name: "Athletics", url: "athletics.html" },
+                        { name: "Badminton", url: "badminton.html" },
+                        { name: "Billiards", url: "billiards.html" },
+                        { name: "Chess", url: "chess.html" },
+                        { name: "Cricket", url: "cricket.html" },
+                        { name: "FOOT BALL", url: "football.html" },
+                        { name: "Golf", url: "golf.html" },
+                        { name: "Judo", url: "judo.html" },
+                        { name: "Motorcycle Racing", url: "mr.html" },
+                        { name: "Swimming", url: "swim.html" },
+                        { name: "Tennis", url: "tennis.html" },
+                        { name: "Volleyball", url: "volleyball.html" },
+                        // Add more sports as needed
+                    ];
+            
+                    function performSearch() {
+                        // Get the value from the search input
+                        var searchQuery = document.getElementById("searchInput").value.toLowerCase();
+            
+                        // Filter sports based on the search query
+                        var filteredSports = sportsData.filter(function (sport) {
+                            return sport.name.toLowerCase().includes(searchQuery);
+                        });
+            
+                        // Redirect to the first matching sport's URL
+                        if (filteredSports.length > 0) {
+                            window.location.href = filteredSports[0].url;
+                        } else {
+                            // Handle no matching results
+                            alert("No matching results found.");
+                        }
+                    }
+            
+                    document.addEventListener("DOMContentLoaded", function () {
+                var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            
+                window.addEventListener("scroll", function () {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        scrollToTopBtn.style.display = "block";
+                    } else {
+                        scrollToTopBtn.style.display = "none";
+                    }
+                });
+            
+                scrollToTopBtn.addEventListener("click", function () {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+                });
+            });
+            
+            
+            
+            
+                </script>
+</body>
+
+</html>

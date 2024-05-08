@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportsinfo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body{
+  padding: 0px;
+  margin: 0px;
+}
+
+.main{
+  width: 100%;
+}
+
+.nav {
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border: 5px solid #97db83;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+  transition: box-shadow 0.3s ease;
+}
+
+.nav:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 6); /* Adjust the values for the hover effect */
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav ul li {
+  margin-left: 15px;
+  list-style-type: none;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.nav ul li a:hover {
+color: #97db83;
+}
+
+.dropdown {
+  margin-left:15px; /* Push the dropdown to the right */
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Adjust the distance from the top */
+  background-color: #97db83;
+  min-width: 162px;
+  z-index: 1;
+  margin-left: -5px; /* Align the dropdown with other items */
+}
+.dropdown-container select {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  border: 4px solid black;
+}
+
+.dropdown-container:hover .dropdown-content {
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+}
+
+.sea {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; /* Adjust the width as needed */
+}
+
+.container-fluid input {
+  height: 25px;
+}
+.container-fluid form {
+  display: flex;
+  align-items: center;
+}
+
+.container-fluid button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+}
+
+.banner{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3); /* Adjust the values as needed */
+    transition: box-shadow 0.3s ease;
+}
+
+.banner:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6); /* Adjust the values for the hover effect */
+}
+
+.info{
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .c1 {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .c2 {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .c3 {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .card {
+    margin-left: 25px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+    transition: box-shadow 0.3s ease;
+    width: 18rem; /* Set the desired width */
+    height: 100%; /* Set the height to occupy full available height */
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 6);
+}
+  .card-body {
+    background-color: white;
+    align-items: center;
+    flex: 1;
+    /* Take remaining vertical space within the card */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .card-text {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .btn {
+    align-self: center;
+    /* Align the button in the center horizontally */
+    margin-bottom: 10px;
+    /* Optional: Add some space between text and button */
+  }
+
+  p {
+    text-align: center;
+  }
+  .btn.btn-dark:hover {
+  color: white; /* Set the desired text color on hover */
+  background-color: black; /* Set the desired background color on hover */
+  border-color: black; /* Set the desired border color on hover */
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #97db83;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-to-top-btn i {
+  margin-top: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+  </style>
+</head>
+
+<body>
+
+<div class="main">
+
+  <div class="nav">
+    <div class="nav">
+      <ul>
+        <li><a href="index.html"><img src="Images/x2.jpg" width="250px"></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+      <div class="dropdown">
+        <div class="dropdown-container">
+          <select id="sportsDropdown" onclick="toggleDropdown()" onchange="performSearch()">
+            <option value="" selected disabled>SPORTS</option>
+            <option value="athletics.html">Athletics</option>
+            <option value="badminton.html">Badminton</option>
+            <option value="billiards.html">Billiards</option>
+            <option value="chess.html">Chess</option>
+            <option value="cricket.html">Cricket</option>
+            <option value="football.html">Football</option>
+            <option value="golf.html">Golf</option>
+            <option value="judo.html">Judo</option>
+            <option value="mr.html">Motorcycle Racing</option>
+            <option value="swim.html">Swimming</option>
+            <option value="tennis.html">Tennis</option>
+            <option value="volleyball.html">Volleyball</option>
+          </select>
+          <div class="dropdown-content">
+            <!-- Add links for each sport -->
+            <a href="athletics.html">Athletics</a>
+            <a href="badminton.html">Badminton</a>
+            <a href="billiards.html">Billiards</a>
+            <a href="chess.html">Chess</a>
+            <a href="cricket.html">Cricket</a>
+            <a href="football.html">Football</a>
+            <a href="golf.html">Golf</a>
+            <a href="judo.html">Judo</a>
+            <a href="mr.html">Motorcycle Racing</a>
+            <a href="swim.html">Swimming</a>
+            <a href="tennis.html">Tennis</a>
+            <a href="volleyball.html">Volleyball</a>
+            <!-- Add other sport links -->
+          </div>
+        </div>
+      </div>
+      <div class="sea">
+        <div class="container-fluid">
+          <form onsubmit="performSearch(); return false;" class="d-flex" role="search">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"
+                style="color: #ffffff;"></i></button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="banner">
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="athletics.html"><img src="Images/1.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="badminton.html"><img src="Images/2.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="billiards.html"><img src="Images/3.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="chess.html"><img src="Images/4.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="cricket.html"><img src="Images/cri.jpg" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="football.html"><img src="Images/5.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="golf.html"><img src="Images/6.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="judo.html"><img src="Images/7.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="mr.html"><img src="Images/8.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="swim.html"><img src="Images/9.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="tennis.html"><img src="Images/10.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+        <div class="carousel-item">
+          <a href="volleyball.html"><img src="Images/11.png" class="d-block w-100" alt="..."></a>
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="info">
+
+
+    <div class="c1">
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px; border: 4px solid; border-radius: 0px; ">
+        <img src="Images/a.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>ATHLETICS</h5>
+          <p class="card-text">
+            Athletics encompasses a variety of competitive physical activities, such as running, jumping, and
+            throwing. It
+            showcases strength, speed, and skill, fostering a spirit of sportsmanship and achievement.<br></p>
+          <a href="athletics.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px;border: 4px solid; border-radius: 0px;">
+        <img src="Images/b.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>BADMINTON</h5>
+          <p class="card-text">Badminton is a fast-paced racquet sport played indoors. It combines agility, strategy,
+            and
+            precision. Players use a shuttlecock to score points, engaging in dynamic rallies and strategic
+            maneuvers.<br><br></p>
+          <a href="badminton.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px; border: 4px solid; border-radius: 0px;">
+        <img src="Images/bi.png" class="card-img-top" alt="..."
+          style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>BILLIARDS</h5>
+          <p class="card-text">Billiards is a cue sport played on a rectangular table with pockets. Players use a cue
+            stick to strike balls, aiming for precise shots, strategic positioning, and scoring points.<br><br><br>
+          </p>
+          <a href="billiards.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px; border: 4px solid; border-radius: 0px;">
+        <img src="Images/c.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>CHESS</h5>
+          <p class="card-text">
+            Chess is a strategic board game played between two opponents. It requires intellect and foresight to
+            outmaneuver the adversary. Each piece has unique moves, contributing to a mentally stimulating
+            contest..<br><br></p>
+          <a href="chess.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="c2">
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px; border: 4px solid; border-radius: 0px;">
+        <img src="Images/cr.png" class="card-img-top" alt="..."
+          style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>CRICKET</h5>
+          <p class="card-text">Cricket is a bat-and-ball game played between two teams. It combines strategy, skill,
+            and
+            teamwork. Matches unfold in innings, with batsmen scoring runs and bowlers taking wickets.<br><br></p>
+          <a href="cricket.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px; border: 4px solid; border-radius: 0px;">
+        <img src="Images/f.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>FOOTBALL</h5>
+          <p class="card-text">Football is a globally beloved sport played between two teams, aiming to score goals by
+            advancing a ball with any body part except hands. It unites fans worldwide in passion and
+            camaraderie.<br><br></p>
+          <a href="football.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px;border: 4px solid; border-radius: 0px;">
+        <img src="Images/g.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>GOLF</h5>
+          <p class="card-text">Golf is a precision sport played on vast greens. Players use clubs to hit a ball into a
+            series of holes with the fewest strokes, emphasizing skill, strategy, and tranquility.<br><br><br></p>
+          <a href="golf.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px; border: 4px solid; border-radius: 0px;">
+        <img src="Images/j.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>JUDO</h5>
+          <p class="card-text">Judo is a Japanese martial art that emphasizes throws, joint locks, and pins. It blends
+            physical and mental discipline, promoting self-defense, respect, and personal development through rigorous
+            training.<br></p>
+          <a href="judo.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="c3">
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px;border: 4px solid; border-radius: 0px;">
+        <img src="Images/mr.png" class="card-img-top" alt="..."
+          style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>MOTORCYCLE RACING</h5>
+          <p class="card-text">Motorcycle racing is a thrilling motorsport where skilled riders navigate high-speed
+            circuits, showcasing precision and daring maneuvers. It combines speed, strategy, and adrenaline for an
+            electrifying spectator experience.</p>
+          <a href="mr.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px;border: 4px solid; border-radius: 0px;">
+        <img src="Images/s.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>SWIMMING</h5>
+          <p class="card-text">Swimming is a water sport that combines endurance and technique. It involves propelling
+            oneself through water using limbs, emphasizing cardiovascular fitness, and promoting overall physical
+            well-being and relaxation.<br><br></p>
+          <a href="swim.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px;border: 4px solid; border-radius: 0px;">
+        <img src="Images/t.png" class="card-img-top" alt="..." style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>TENNIS</h5>
+          <p class="card-text">Tennis is a racket sport played individually or in pairs. Players use a netted court to
+            hit
+            a ball back and forth, combining skill, strategy, and physical endurance.<br><br><br><br></p>
+          <a href="tennis.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+      <div class="card border-success mb-3 h-100"
+        style="max-width: 18rem; margin-bottom: 20px; border: 4px solid; border-radius: 0px;">
+        <img src="Images/vb.png" class="card-img-top" alt="..."
+          style="width: 100%; height: 100%; border-radius: 0px;">
+        <div class="card-body">
+          <h5 class="card-title"><br>VOLLEYBALL</h5>
+          <p class="card-text">Volleyball is a dynamic team sport played on a rectangular court divided by a net.
+            Players
+            aim to score points by sending the ball over the net, combining strategy and teamwork.<br><br><br></p>
+          <a href="volleyball.html" class="btn btn-dark">VIEW MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous">
+  </script>
+
+<script>
+
+  function toggleDropdown() {
+    var dropdown = document.getElementById("sportsDropdown");
+    dropdown.disabled = !dropdown.disabled;
+  }
+
+  var sportsData = [
+    { name: "Athletics", url: "athletics.html" },
+    { name: "Badminton", url: "badminton.html" },
+    { name: "Billiards", url: "billiards.html" },
+    { name: "Chess", url: "chess.html" },
+    { name: "Cricket", url: "cricket.html" },
+    { name: "FOOT BALL", url: "football.html" },
+    { name: "Golf", url: "golf.html" },
+    { name: "Judo", url: "judo.html" },
+    { name: "Motorcycle Racing", url: "mr.html" },
+    { name: "Swimming", url: "swim.html" },
+    { name: "Tennis", url: "tennis.html" },
+    { name: "Volleyball", url: "volleyball.html" },
+    // Add more sports as needed
+  ];
+
+  function performSearch() {
+    // Get the value from the search input
+    var searchQuery = document.getElementById("searchInput").value.toLowerCase();
+
+    // Filter sports based on the search query
+    var filteredSports = sportsData.filter(function (sport) {
+      return sport.name.toLowerCase().includes(searchQuery);
+    });
+
+    // Redirect to the first matching sport's URL
+    if (filteredSports.length > 0) {
+      window.location.href = filteredSports[0].url;
+    } else {
+      // Handle no matching results
+      alert("No matching results found.");
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", function () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  });
+});
+
+
+
+
+</script>
+</body>
+
+</html>
